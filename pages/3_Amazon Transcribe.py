@@ -50,15 +50,15 @@ if col_check.button("チェック"):
     st.write("### 解説")
     st.write(
         """
-            ・選択肢AとBとDは不適切です。  
-            Amazon Kinesis PIIリダクション機能というものはありません。  
-            また、Amazon Kinesis Video Streamsは音声ファイルの文字起こしには利用できません。  
             ・選択肢Cは適切です。  
             音声ファイルからテキストを抽出する際に、顧客個人を特定できる情報を削除するには、Amazon Transcribe PIIリダクション機能を利用します。  
             PIIリダクション機能を有効にして、Amazon Transcribeの文字起こしジョブを設定することで、自動的に顧客個人を特定できる情報を削除することが可能です。  
             PIIとは個人を識別できる情報を指します。  
             Amazon Transcribe PIIリダクション機能はAmazon Transcribeが個人情報を識別して、自動的にPIIを隠蔽してくれます。  
             Lambda関数からAmazon Transcribeジョブを呼び出して、音声ファイルからテキスト抽出する簡易アプリケーションを開発します。  
-            それをAmazon S3イベント通知機能に連携することで、音声ファイルがS3バケットにアップロードされたイベントをトリガーにLambda関数が呼び出され、Amazon Transcribeジョブを実行し、出力結果をS3バケットに保存することが可能となります。
+            それをAmazon S3イベント通知機能に連携することで、音声ファイルがS3バケットにアップロードされたイベントをトリガーにLambda関数が呼び出され、Amazon Transcribeジョブを実行し、出力結果をS3バケットに保存することが可能となります。\n
+            ・選択肢AとBとDは不適切です。  
+            Amazon Kinesis PIIリダクション機能というものはありません。  
+            また、Amazon Kinesis Video Streamsは音声ファイルの文字起こしには利用できません。  
         """
     )
