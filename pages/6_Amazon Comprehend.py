@@ -18,7 +18,7 @@ col1, col2 = st.columns((8, 2))
 
 col1.write("")
 col1.markdown(
-    "<h2 style='text-align: center;'>5. Amazon Lex</h2>", unsafe_allow_html=True
+    "<h2 style='text-align: center;'>6. Amazon Comprehend</h2>", unsafe_allow_html=True
 )
 col2.image("images/Arch_Amazon-Comprehend_64.png")
 
