@@ -3,10 +3,16 @@ import streamlit as st
 
 class Choice:
     def __init__(self):
-        self.A = "Amazon Textractを利用して抽出したデータをAmazon Comprehendに取り込んで分析する。"
-        self.B = "Amazon Textractを利用して抽出したデータをAmazon Athenaに取り込んで分析する。"
-        self.C = "Amazon Comprehendを利用して抽出したデータをAmazon Athenaに取り込んで分析する。"
-        self.D = "Amazon Comprehendを利用して抽出したデータをAmazon Textractに取り込んて分析する。"
+        self.A = (
+            "Amazon Textractで抽出したデータをAmazon Comprehendに取り込んで分析する。"
+        )
+        self.B = "Amazon Textractで抽出したデータをAmazon Athenaに取り込んで分析する。"
+        self.C = (
+            "Amazon Comprehendで抽出したデータをAmazon Athenaに取り込んで分析する。"
+        )
+        self.D = (
+            "Amazon Comprehendで抽出したデータをAmazon Textractに取り込んて分析する。"
+        )
         self.choices = [self.A, self.B, self.C, self.D]
 
     def get_choices(self):
