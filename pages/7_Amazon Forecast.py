@@ -4,7 +4,7 @@ import streamlit as st
 class Choice:
     def __init__(self):
         self.A = "Amazon SageMakerエンドポイントを作成して、Amazon S3パケットにある過去のデータでモデルをトレーニングする。関数URL付きのAWS Lambda関数を設定して、SageMakerモデルで予測を行う。"
-        self.B = "Amazon SageMakerモデルをデプロイして、Amazon s3バケットにある過去のデータでモデルをトレーニングする。関数URL付きのAWS Lambda関数を設定して、 SageMakerモデルで予測を行う。"
+        self.B = "Amazon SageMakerモデルをデプロイして、Amazon S3バケットにある過去のデータでモデルをトレーニングする。関数URL付きのAWS Lambda関数を設定して、 SageMakerモデルで予測を行う。"
         self.C = "Amazon S3バケットにある過去のデータを使用して、Amazon Forecast予測モデルをトレーニングする。Amazon Forecast予測モデルを使用する関数URL付きのAWS Lambda関数を設定して、予測を行う。"
         self.D = "Amazon S3バケットにある過去のデータを使用して、Amazon Forecast予測モデルをトレーニングする。Amazon Forecast予測モデルを使用するAmazonSageMakerモデルをデプロイして、予測を行う。"
         self.choices = [self.A, self.B, self.C, self.D]
