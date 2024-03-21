@@ -3,12 +3,14 @@ import streamlit as st
 from modules.no_1 import main as no_1
 from modules.no_2 import main as no_2
 from modules.no_3 import main as no_3
+from modules.no_4 import main as no_4
 
 # 問題リスト
 questions = {
     "1": "問題1",
     "2": "問題2",
     "3": "問題3",
+    "4": "問題4",
 }
 
 # リストボックスの表示
@@ -23,3 +25,5 @@ match selected_question:
         no_2()
     case "3":
         no_3()
+    case "4":
+        no_4()
