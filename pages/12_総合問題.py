@@ -4,6 +4,7 @@ from modules.no_1 import main as no_1
 from modules.no_2 import main as no_2
 from modules.no_3 import main as no_3
 from modules.no_4 import main as no_4
+from modules.no_5 import main as no_5
 
 # 問題リスト
 questions = {
@@ -11,6 +12,7 @@ questions = {
     "2": "問題2",
     "3": "問題3",
     "4": "問題4",
+    "5": "問題5",
 }
 
 # リストボックスの表示
@@ -27,3 +29,5 @@ match selected_question:
         no_3()
     case "4":
         no_4()
+    case "5":
+        no_5()
